@@ -11,8 +11,20 @@ while True:
         if kod in kody[miejsce] and int(len(kod)) == 4:
             print('Zampraszamy')
             break
+        elif kod == '0':
+            print('Zaraz rozpocznie łączenie...')
+            time.sleep(2)
+            print('3')
+            time.sleep(1)
+            print('2')
+            time.sleep(1)
+            print('1')
+            time.sleep(1)
+            print('Mieszkanie', mieszkanie, 'łączenie...')
+            break
         else:
             print('Błędny kod')
+            time.sleep(2)
             print('Zaraz rozpocznie łączenie...')
             time.sleep(2)
             print('3')
