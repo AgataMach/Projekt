@@ -7,7 +7,7 @@ while True:
     mieszkanie = input('wpisz numer mieszkania')
     if mieszkanie in mieszkania:
         miejsce = mieszkania.index(mieszkanie)
-        kod = input('wpisz kod')
+        kod = input('wpisz kod lub połącz wybierając 0')
         if kod in kody[miejsce] and int(len(kod)) == 4:
             print('Zampraszamy')
             break
